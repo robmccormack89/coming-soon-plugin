@@ -1,0 +1,63 @@
+.coming-soon .uk-input {
+  height: 49px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 300px;
+}
+.coming-soon .uk-button {
+  font-weight: bold;
+}
+
+@media only screen and (max-width:768px) {
+  .coming-soon .uk-button-large {
+    margin: 0;
+  }
+
+  .coming-soon .uk-input {
+    height: 51px;
+    width: 160px;
+  }
+}
+
+.coming-soon .launch-msg, .social-icons-wrap {
+  display: inline-block;
+}
+.coming-soon .social-icons-wrap {
+  margin-left: 15px;
+}
+
+@media (min-width: 1200px) {
+  .uk-heading-medium {
+    font-size: 3.5rem;
+  }
+}
+
+.cover-img {
+  max-height: 100vh;
+  min-width: 100vw;
+}
+
+.wpcf7 .ajax-loader {
+  position: absolute;
+  top: 15px;
+  /* visibility: visible; */
+  background-color: #008ce1;
+}
+
+.uk-logo {
+  font-size: 3.5rem;
+}
+
+.uk-overlay-secondary {
+  background: rgb(31 98 138 / 54%);
+}
+
+.uk-overlay-secondary {
+  background: rgb(52 99 132 / 62%);
+}
+
+.cover-fit {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}

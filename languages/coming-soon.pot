@@ -1,0 +1,54 @@
+# Copyright (C) 2021 coming-soon
+# This file is distributed under the same license as the coming-soon package.
+msgid ""
+msgstr ""
+"Project-Id-Version: coming-soon\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views/temp/coming-soon.php:8
+msgctxt "Coming Soon background image url"
+msgid "https://source.unsplash.com/1920x1200/?clouds,sky"
+msgstr ""
+
+#: views/temp/coming-soon.php:9
+msgctxt "Coming Soon background image alt"
+msgid "Alt text"
+msgstr ""
+
+#: views/temp/coming-soon.php:16
+msgctxt "Coming Soon heading"
+msgid "Our new website is on its way"
+msgstr ""
+
+#: views/temp/coming-soon.php:19
+msgctxt "Coming Soon message text"
+msgid "Get notified when we launch"
+msgstr ""
+
+#: views/temp/coming-soon.php:24
+msgctxt "Coming Soon social media url"
+msgid "https://www.facebook.com"
+msgstr ""
+
+#: views/temp/coming-soon.php:25
+msgctxt "Coming Soon social media icon html"
+msgid "<i class=\"fab fa-facebook-f fa-lg\"></i>"
+msgstr ""
+
+#: views/temp/coming-soon.php:29
+msgctxt "Coming Soon email address"
+msgid "info@example.com"
+msgstr ""
+
+#: views/temp/coming-soon.php:36
+msgctxt "Coming Soon form shortcode"
+msgid "[contact-form-7 title=\"Launch\"]"
+msgstr ""
