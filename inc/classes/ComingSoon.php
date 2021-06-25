@@ -49,11 +49,42 @@ class ComingSoon extends Timber {
     load_plugin_textdomain('coming-soon', false, COMING_SOON_BASE. '/languages');
   }
   public function plugin_enqueue_assets() {
+    
     if(is_user_logged_in()) return;
+    
+    // base
+    wp_enqueue_style(
+      'coming-soon-base',
+      COMING_SOON_URL . '/public/css/base.css'
+    );
+
+    // base
+    wp_enqueue_script(
+      'coming-soon-base',
+      COMING_SOON_URL . '/public/js/base.js',
+      '',
+      '',
+      false
+    );
+    
+    // plugin*
     wp_enqueue_style(
       'coming-soon',
-      COMING_SOON_URL . 'public/css/coming-soon.css'
+      COMING_SOON_URL . 'public/css/plugin.css'
     );
+    
+    // jquery*
+    wp_enqueue_script('jquery');
+    
+    // plugin*
+    wp_enqueue_script(
+      'coming-soon',
+        COMING_SOON_URL . '/public/js/plugin.js',
+      'jquery',
+      '1.0.0',
+      true
+    );
+    
   }
   
   public function add_to_twig($twig) { 
