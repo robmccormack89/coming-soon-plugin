@@ -19,12 +19,13 @@ defined('ABSPATH') || exit;
 // define some constants
 if (!defined('COMING_SOON_PATH')) define('COMING_SOON_PATH', plugin_dir_path( __FILE__ ));
 if (!defined('COMING_SOON_URL')) define('COMING_SOON_URL', plugin_dir_url( __FILE__ ));
-
-// require action functions 
-// require_once('inc/functions.php');
+if (!defined('COMING_SOON_BASE')) define('COMING_SOON_BASE', dirname(plugin_basename( __FILE__ )));
 
 // require the composer autoloader
 if (file_exists($composer_autoload = __DIR__.'/vendor/autoload.php')) require_once $composer_autoload;
 
 // then require the main plugin class. this class extends Timber/Timber which is required via composer
 new Rmcc\ComingSoon;
+
+// require action functions 
+// require_once('inc/functions.php');
