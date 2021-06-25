@@ -55,13 +55,13 @@ class ComingSoon extends Timber {
     // base
     wp_enqueue_style(
       'coming-soon-base',
-      COMING_SOON_URL . '/public/css/base.css'
+      COMING_SOON_URL . 'public/css/base.css'
     );
 
     // base
     wp_enqueue_script(
       'coming-soon-base',
-      COMING_SOON_URL . '/public/js/base.js',
+      COMING_SOON_URL . 'public/js/base.js',
       '',
       '',
       false
@@ -79,7 +79,7 @@ class ComingSoon extends Timber {
     // plugin*
     wp_enqueue_script(
       'coming-soon',
-        COMING_SOON_URL . '/public/js/plugin.js',
+        COMING_SOON_URL . 'public/js/plugin.js',
       'jquery',
       '1.0.0',
       true
