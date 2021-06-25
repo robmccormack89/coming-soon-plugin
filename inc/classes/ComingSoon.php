@@ -46,7 +46,7 @@ class ComingSoon extends Timber {
     );
   }
   public function plugin_text_domain_init() {
-    load_plugin_textdomain('coming-soon',, false, COMING_SOON_BASE. '/languages');
+    load_plugin_textdomain('coming-soon', false, COMING_SOON_BASE. '/languages');
   }
   public function plugin_enqueue_assets() {
     if(is_user_logged_in()) return;
@@ -57,7 +57,9 @@ class ComingSoon extends Timber {
   }
   
   public function add_to_twig($twig) { 
-    $twig->addExtension(new \Twig_Extension_StringLoader());
+    if(!class_exists('Twig_Extension_StringLoader')){
+      $twig->addExtension(new Twig_Extension_StringLoader());
+    }
     return $twig;
   }
   public function add_to_context($context) {
