@@ -63,6 +63,7 @@ class ComingSoon extends Timber {
     return $twig;
   }
   public function add_to_context($context) {
+    $context['site'] = new \Timber\Site;
     return $context;    
   }
 }
