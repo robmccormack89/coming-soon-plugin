@@ -15,7 +15,22 @@ class ComingSoon extends Timber {
 
     add_action('template_include', array($this, 'coming_soon_template'));
     add_action('template_redirect', array($this, 'coming_soon_redirect'));
+    
+    // add_action('wp_print_scripts', array($this, 'remove_unnecessary_scripts'));
+  	add_action('wp_print_styles', array($this, 'remove_unnecessary_styles'));
   }
+  
+  public function remove_unnecessary_scripts() {
+	  wp_dequeue_script( 'toaster-js' );
+	  wp_deregister_script( 'toaster-js' );
+	}
+
+	public function remove_unnecessary_styles() {
+	  wp_dequeue_style( 'twentynineteen-style' );
+	  wp_deregister_style( 'twentynineteen-style' );
+	  wp_dequeue_style( 'twentynineteen-print-style' );
+	  wp_deregister_style( 'twentynineteen-print-style' );
+	}
 
   public function coming_soon_template($page_template) {
     if(is_user_logged_in()) {
