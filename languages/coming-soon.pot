@@ -13,42 +13,37 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: views/temp/coming-soon.php:8
+#: views/temp/coming-soon.php:16
 msgctxt "Coming Soon background image url"
 msgid "https://source.unsplash.com/1920x1200/?clouds,sky"
 msgstr ""
 
-#: views/temp/coming-soon.php:9
+#: views/temp/coming-soon.php:17
 msgctxt "Coming Soon background image alt"
 msgid "Alt text"
 msgstr ""
 
-#: views/temp/coming-soon.php:16
+#: views/temp/coming-soon.php:24
 msgctxt "Coming Soon heading"
 msgid "Our new website is on its way"
 msgstr ""
 
-#: views/temp/coming-soon.php:19
+#: views/temp/coming-soon.php:27
 msgctxt "Coming Soon message text"
 msgid "Get notified when we launch"
 msgstr ""
 
-#: views/temp/coming-soon.php:24
+#: views/temp/coming-soon.php:32
 msgctxt "Coming Soon social media url"
 msgid "https://www.facebook.com"
 msgstr ""
 
-#: views/temp/coming-soon.php:25
+#: views/temp/coming-soon.php:33
 msgctxt "Coming Soon social media icon html"
 msgid "<i class=\"fab fa-facebook-f fa-lg\"></i>"
 msgstr ""
 
-#: views/temp/coming-soon.php:29
+#: views/temp/coming-soon.php:37
 msgctxt "Coming Soon email address"
 msgid "info@example.com"
-msgstr ""
-
-#: views/temp/coming-soon.php:36
-msgctxt "Coming Soon form shortcode"
-msgid "[contact-form-7 title=\"Launch\"]"
 msgstr ""
