@@ -16,12 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-25 14:41+0000\n"
-"PO-Revision-Date: 2021-07-21 13:59+0000\n"
+"PO-Revision-Date: 2021-06-25 14:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: English (UK)\n"
 "Language: en_GB\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.5.3; wp-5.8"
+"X-Loco-Version: 2.5.3; wp-5.7.2"
 
 #: views/temp/coming-soon.php:16
 msgctxt "Coming Soon background image url"
@@ -46,7 +46,7 @@ msgstr ""
 #: views/temp/coming-soon.php:32
 msgctxt "Coming Soon social media url"
 msgid "https://www.facebook.com"
-msgstr "https://www.facebook.com/Dreamwinners.ie/"
+msgstr ""
 
 #: views/temp/coming-soon.php:33
 msgctxt "Coming Soon social media icon html"
@@ -56,4 +56,4 @@ msgstr ""
 #: views/temp/coming-soon.php:37
 msgctxt "Coming Soon email address"
 msgid "info@example.com"
-msgstr "info@dreamwinners.ie"
+msgstr ""
