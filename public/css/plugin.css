@@ -130,6 +130,7 @@ LOGO
   font-family: 'Norican', cursive;
   font-size: 4rem;
   transition: color 150ms;
+  line-height: 5rem;
 }
 .uk-light .uk-logo, .uk-light .uk-logo:hover, .uk-light .uk-logo:focus {
   color: #fff;
@@ -200,7 +201,9 @@ RESPONSIVE
     height: 51px;
     width: 160px;
   }
-
+  .uk-logo {
+    line-height: 4rem;
+  }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 959px) {
   .launch-msg {

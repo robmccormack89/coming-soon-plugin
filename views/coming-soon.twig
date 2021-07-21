@@ -17,7 +17,10 @@
         alt="{{ _x('Alt text', 'Coming Soon background image alt', 'coming-soon')|e('esc_html') }}">
         <div class="uk-overlay-secondary uk-position-cover uk-light">
           <div class="uk-position-center uk-padding-small uk-text-center">
-            <span class="uk-logo">{{site.title}}</span>
+            <div>
+              <span class="uk-logo">{{site.title}}</span>
+            </div>
+            <span class="uk-text-emphasis">{{site.description}}</span>
             <!-- fancy divider -->
             <hr class="uk-divider-icon">
             <!-- the title -->
