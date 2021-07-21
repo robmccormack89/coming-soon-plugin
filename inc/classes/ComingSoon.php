@@ -16,21 +16,57 @@ class ComingSoon extends Timber {
     add_action('template_include', array($this, 'coming_soon_template'));
     add_action('template_redirect', array($this, 'coming_soon_redirect'));
     
-    // add_action('wp_print_scripts', array($this, 'remove_unnecessary_scripts'));
-  	add_action('wp_print_styles', array($this, 'remove_unnecessary_styles'));
+    add_action('plugins_loaded', array($this, 'coming_soon_assets_plugins_loaded'), 99);
   }
   
-  public function remove_unnecessary_scripts() {
-	  wp_dequeue_script( 'toaster-js' );
-	  wp_deregister_script( 'toaster-js' );
-	}
-
-	public function remove_unnecessary_styles() {
-	  wp_dequeue_style( 'twentynineteen-style' );
-	  wp_deregister_style( 'twentynineteen-style' );
-	  wp_dequeue_style( 'twentynineteen-print-style' );
-	  wp_deregister_style( 'twentynineteen-print-style' );
-	}
+  public function coming_soon_assets_plugins_loaded() {
+    // remove the active theme's styles & scripts
+    add_action('wp_print_scripts', array($this, 'remove_theme_all_scripts'), 100);
+    add_action('wp_print_styles', array($this, 'remove_theme_all_styles'), 100);
+  }
+  public function remove_theme_all_scripts() {
+    if (is_user_logged_in()) return;
+    
+    global $wp_scripts;
+    
+    $stylesheet_uri = get_stylesheet_directory_uri();
+    $new_scripts_list = array(); 
+    
+    foreach( $wp_scripts->queue as $handle ) {
+      $obj = $wp_scripts->registered[$handle];
+      $obj_handle = $obj->handle;
+      $obj_uri = $obj->src;
+  
+      if (strpos( $obj_uri, $stylesheet_uri ) === 0)  {
+        //Do Nothing
+      } else {
+        $new_scripts_list[] = $obj_handle;
+      }
+    }
+    
+    $wp_scripts->queue = $new_scripts_list;
+  }
+  public function remove_theme_all_styles() {
+    if (is_user_logged_in()) return;
+    
+    global $wp_styles;
+    
+    $stylesheet_uri = get_stylesheet_directory_uri();
+    $new_styles_list = array(); 
+    
+    foreach( $wp_styles->queue as $handle ) {
+      $obj = $wp_styles->registered[$handle];
+      $obj_handle = $obj->handle;
+      $obj_uri = $obj->src;
+      if ( strpos( $obj_uri, $stylesheet_uri ) === 0 )  {
+        //Do Nothing
+      } else {
+        $new_styles_list[] = $obj_handle;
+      }
+    }
+    
+    $wp_styles->queue = $new_styles_list;
+  }
 
   public function coming_soon_template($page_template) {
     if(is_user_logged_in()) {
