@@ -10,45 +10,45 @@
     {{ function('wp_head') }}
   </head>
   <body class="{{body_class|e('esc_html')}}" data-template="coming-soon.twig">    
-      <main role="main" id="MainContent" class="coming-soon uk-inline">
-        <img 
-        class="cover-fit" 
-        src="{{ _x('https://source.unsplash.com/1920x1200/?clouds,sky', 'Coming Soon background image url', 'coming-soon')|e('esc_url') }}" 
-        alt="{{ _x('Alt text', 'Coming Soon background image alt', 'coming-soon')|e('esc_html') }}">
-        <div class="uk-overlay-secondary uk-position-cover uk-light">
-          <div class="uk-position-center uk-padding-small uk-text-center">
-            <div>
-              <span class="uk-logo">{{site.title}}</span>
-            </div>
-            <span class="uk-text-emphasis">{{site.description}}</span>
-            <!-- fancy divider -->
-            <hr class="uk-divider-icon">
-            <!-- the title -->
-            <h1 class="launch-heading uk-heading-medium uk-margin-remove-top uk-margin-remove-bottom">{{ _x('Our new website is on its way', 'Coming Soon heading', 'coming-soon')|e('esc_html') }}
-            </h1>
-            <!-- the message -->
-            <p class="launch-msg uk-margin-small-bottom uk-text-lead">{{ _x('Get notified when we launch', 'Coming Soon message text', 'coming-soon')|e('esc_html') }}</p>
-            <!-- socials -->
-            <div class="social-icons-wrap">
-              <div class="social-icons uk-grid-small uk-child-width-auto uk-flex uk-flex-left uk-margin-top" uk-grid>
-                <div>
-                  <a href="{{ _x('https://www.facebook.com', 'Coming Soon social media url', 'coming-soon')|e('esc_html') }}" target="_blank">
-                    {{ _x('<i class="fab fa-facebook-f fa-lg"></i>', 'Coming Soon social media icon html', 'coming-soon') }}
-                  </a>
-                </div>
-                <div>
-                  <a href="mailto:{{ _x('info@example.com', 'Coming Soon email address', 'coming-soon')|e('esc_html') }}">
-                    <i class="far fa-envelope fa-lg"></i>
-                  </a>
-                </div>
+    <main role="main" id="MainContent" class="coming-soon uk-inline uk-width-1-1">
+      <img 
+      class="cover-fit" 
+      src="{{ _x('https://source.unsplash.com/1920x1200/?clouds,sky', 'Coming Soon background image url', 'coming-soon')|e('esc_url') }}" 
+      alt="{{ _x('Alt text', 'Coming Soon background image alt', 'coming-soon')|e('esc_html') }}">
+      <div class="uk-overlay-secondary uk-position-cover uk-light">
+        <div class="uk-position-center uk-padding-small uk-text-center">
+          <div>
+            <span class="uk-logo">{{site.title}}</span>
+          </div>
+          <span class="uk-text-emphasis">{{site.description}}</span>
+          <!-- fancy divider -->
+          <hr class="uk-divider-icon">
+          <!-- the title -->
+          <h1 class="launch-heading uk-heading-medium uk-margin-remove-top uk-margin-remove-bottom">{{ _x('Our new website is on its way', 'Coming Soon heading', 'coming-soon')|e('esc_html') }}
+          </h1>
+          <!-- the message -->
+          <p class="launch-msg uk-margin-small-bottom uk-text-lead">{{ _x('Get notified when we launch', 'Coming Soon message text', 'coming-soon')|e('esc_html') }}</p>
+          <!-- socials -->
+          <div class="social-icons-wrap">
+            <div class="social-icons uk-grid-small uk-child-width-auto uk-flex uk-flex-left uk-margin-top" uk-grid>
+              <div>
+                <a href="{{ _x('https://www.facebook.com', 'Coming Soon social media url', 'coming-soon')|e('esc_html') }}" target="_blank">
+                  {{ _x('<i class="fab fa-facebook-f fa-lg"></i>', 'Coming Soon social media icon html', 'coming-soon') }}
+                </a>
+              </div>
+              <div>
+                <a href="mailto:{{ _x('info@example.com', 'Coming Soon email address', 'coming-soon')|e('esc_html') }}">
+                  <i class="far fa-envelope fa-lg"></i>
+                </a>
               </div>
             </div>
-            <!-- subscribe -->
-            {# function('do_shortcode', _x('[contact-form-7 title="Launch"]', 'Coming Soon form shortcode', 'coming-soon')) #}
           </div>
+          <!-- subscribe -->
+          {{ function('do_shortcode', _x('[contact-form-7 title="Launch"]', 'Coming Soon form shortcode', 'coming-soon')) }}
         </div>
-      </main>
-      <!-- include wp footer scripts -->
-      {{ function('wp_footer') }}
-    </body>
+      </div>
+    </main>
+    <!-- include wp footer scripts -->
+    {{ function('wp_footer') }}
+  </body>
 </html>
