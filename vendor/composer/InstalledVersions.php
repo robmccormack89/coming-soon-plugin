@@ -25,51 +25,42 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '4bf380c49c10d0a2687f977ed3967d3997affd00',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '4bf380c49c10d0a2687f977ed3967d3997affd00',
     ),
     'altorouter/altorouter' => 
     array (
-      'pretty_version' => 'v1.2.0',
-      'version' => '1.2.0.0',
+      'pretty_version' => '2.0.2',
+      'version' => '2.0.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '39c50092470128c12284d332bb57f306bb5b58e4',
-    ),
-    'asm89/twig-cache-extension' => 
-    array (
-      'pretty_version' => '1.4.0',
-      'version' => '1.4.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '13787226956ec766f4770722082288097aebaaf3',
+      'reference' => 'f6fede4f94ced7c22ba63a9b8af0bf2dc38e3cb2',
     ),
     'composer/installers' => 
     array (
-      'pretty_version' => 'v1.11.0',
-      'version' => '1.11.0.0',
+      'pretty_version' => 'v1.12.0',
+      'version' => '1.12.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ae03311f45dfe194412081526be2e003960df74b',
+      'reference' => 'd20a64ed3c94748397ff5973488761b22f6d3f19',
     ),
     'roundcube/plugin-installer' => 
     array (
@@ -96,39 +87,57 @@ private static $installed = array (
     ),
     'symfony/polyfill-mbstring' => 
     array (
+      'pretty_version' => 'v1.23.1',
+      'version' => '1.23.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9174a3d80210dca8daa7f31fec659150bbeabfc6',
+    ),
+    'symfony/polyfill-php72' => 
+    array (
       'pretty_version' => 'v1.23.0',
       'version' => '1.23.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2df51500adbaebdc4c38dea4c89a2e131c45c8a1',
+      'reference' => '9a142215a36a3888e30d0a9eeea9766764e96976',
     ),
     'timber/timber' => 
     array (
-      'pretty_version' => '1.18.2',
-      'version' => '1.18.2.0',
+      'pretty_version' => '1.19.1',
+      'version' => '1.19.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '18766d1af8650ca919534cc497e7f0e8d82423a3',
+      'reference' => '3e213fbd3587eb36adec2d5a081824c4722a0acf',
+    ),
+    'twig/cache-extension' => 
+    array (
+      'pretty_version' => 'v1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2c243643f59132194458bd03c745b079bbb12e78',
     ),
     'twig/twig' => 
     array (
-      'pretty_version' => 'v2.14.6',
-      'version' => '2.14.6.0',
+      'pretty_version' => 'v2.14.9',
+      'version' => '2.14.9.0',
       'aliases' => 
       array (
       ),
-      'reference' => '27e5cf2b05e3744accf39d4c68a3235d9966d260',
+      'reference' => 'd28b8d7390e21f02cbafc65b33a12fa0733777c2',
     ),
     'upstatement/routes' => 
     array (
-      'pretty_version' => '0.5',
-      'version' => '0.5.0.0',
+      'pretty_version' => '0.8.1',
+      'version' => '0.8.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3267d28be0a73f197087d58384e1a358d85671b6',
+      'reference' => '02eb866668f5478d794547aa79e73dd92a989ad9',
     ),
   ),
 );
